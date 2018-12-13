@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <style>
+     <style>
       @import url('https://fonts.googleapis.com/css?family=Prosto+One');
 body {
   align-items: center;
@@ -10,7 +11,7 @@ body {
   background: white;
   font-family: Georgia;
   background:
-}
+  }
 h1 {
   font-family: 'Prosto One', cursive;
   font-size: 3em;
@@ -62,33 +63,46 @@ h1 span:nth-child(12){ animation-delay:.55s; }
 h1 span:nth-child(13){ animation-delay:.6s; }
 h1 span:nth-child(14){ animation-delay:.65s; }
     </style>
-  </head>
-  <body>
-<script>
+    <script>
 function func(){
 n=document.getElementById("a_znach").value;
-y=n
-x=n%10
-a=(n-x)/10
-n=100*x+a
+y=n;
+x=n%10;
+a=(n-x)/10;
+n=100*x+a;
 document.getElementById("a").innerHTML ="<span><h1>"+"<span>2.25=</span> <span>"+ n+"</span></h1></span>";
-x=(y-y%100)/100 
-a=y%100 
-n=10*a+x 
-document.getElementById("b").innerHTML ="<span><h1>"+"<span>2.26=</span> <span>"+ n+"</span></h1></span>";
+x=(y-y%100)/100 ;
+a=y%100 ;
+n=10*a+x ;
+document.getElementById("b").innerHTML ="<span><h1>"+"<span>2.27=</span> <span>"+ n+"</span></h1></span>";
+x=((y-y%100)/10+y%10) 
+n=10*x+(y%100-y%10)/10 
+document.getElementById("c").innerHTML ="<span><h1>"+"<span>2.29=</span> <span> "+ n+"</span></h1><span>";
+x=((y-y%100)/10+y%10) 
+n=(y%100-y%10)*10+x 
+document.getElementById("d").innerHTML ="<span><h1>"+"<span>2.31=</span> <span> "+ n+"</span></h1><span>";
+x=y%10 
+a=(y%100-x)+(y-y%100)/100 
+n=100*x+a 
+document.getElementById("e").innerHTML ="<span><h1>"+"<span>2.33=</span> <span> "+ n+"</span></h1><span>";
 }
 </script>
+  </head>
 
-<br>
-
+  <body>
+   
 <br>
 n=<input type="text" value="0" id="a_znach">
 <br>
 <br>
-<button onclick="func()">Надо нажать</button>
+<button onclick="func()">кнопушка</button>
 <br>
 <div id="a"></div>
 <div id="b"></div>
+<div id="c"></div>
+<div id="d"></div>
+<div id="e"></div>
   </body>
 
 </html>
+
