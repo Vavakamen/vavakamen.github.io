@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    function getRadians(degrees) {
+	return (Math.PI/180)*degrees;
+}
+ function myFunction(){
+var example = document.getElementById("example"),
+			    ctx     = example.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(240, 0);
+ctx.lineTo(240, 320);
+ctx.moveTo(0, 160);
+ctx.lineTo(480, 160);
+
+ctx.moveTo(220, 150);
+ctx.lineTo(220, 0);
+ctx.moveTo(220, 150);
+ctx.lineTo(0, 150);
+ctx.stroke();
+
+var example = document.getElementById("example2"),
+			    ctx     = example.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(240, 0);
+ctx.lineTo(240, 320);
+ctx.moveTo(0, 160);
+ctx.lineTo(480, 160);
+
+ctx.moveTo(0, 145);
+ctx.lineTo(480,145);
+ctx.moveTo(0, 180);
+ctx.lineTo(480, 180);
+ctx.stroke();
+
+var example = document.getElementById("example3"),
+			    ctx     = example.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(240, 0);
+ctx.lineTo(240, 320);
+ctx.moveTo(0, 160);
+ctx.lineTo(480, 160);
+
+ctx.moveTo(250, 150);
+ctx.lineTo(250,40);
+ctx.moveTo(260,150);
+ctx.lineTo(260,40 );
+ctx.moveTo(250,40);
+ctx.lineTo(260,40 );
+ctx.stroke();
+
+var example = document.getElementById("example4"),
+			    ctx     = example.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(240, 0);
+ctx.lineTo(240, 320);
+ctx.moveTo(0, 160);
+ctx.lineTo(480, 160);
+
+ctx.moveTo(250, 140);
+ctx.lineTo(250,40);
+ctx.moveTo(250,140);
+ctx.lineTo(480,140 );
+ctx.moveTo(250,40);
+ctx.lineTo(480,40 );
+ctx.stroke();
+
+var example = document.getElementById("example5"),
+			    ctx     = example.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(240, 0);
+ctx.lineTo(240, 320);
+ctx.moveTo(0, 160);
+ctx.lineTo(480, 160);
+
+ctx.moveTo(260, 160);
+ctx.lineTo(260,0);
+ctx.moveTo(260,160);
+ctx.lineTo(480,160 );
+ctx.moveTo(250,170);
+ctx.lineTo(250,320 );
+ctx.moveTo(250,170);
+ctx.lineTo(480,170 );
+ctx.stroke();
+
+var example = document.getElementById("example6"),
+			    ctx     = example.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(240, 0);
+ctx.lineTo(240, 320);
+ctx.moveTo(0, 160);
+ctx.lineTo(480, 160);
+
+ctx.moveTo(260, 150);
+ctx.lineTo(260,0);
+ctx.moveTo(260,150);
+ctx.lineTo(480,150 );
+ctx.moveTo(260,175);
+ctx.lineTo(260,320 );
+ctx.moveTo(260,175);
+ctx.lineTo(480,175 );
+ctx.stroke();
+
+var example = document.getElementById("example7"),
+			    ctx     = example.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(240, 0);
+ctx.lineTo(240, 320);
+ctx.moveTo(0, 160);
+ctx.lineTo(480, 160);
+
+ctx.strokeRect(250, 170, 30, 10);
+ctx.stroke();
+
+var example = document.getElementById("example8"),
+			    ctx     = example.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(240, 0);
+ctx.lineTo(240, 320);
+ctx.moveTo(0, 160);
+ctx.lineTo(480, 160);
+
+ctx.moveTo(0, 145);
+ctx.lineTo(260,145);
+ctx.moveTo(260,145);
+ctx.lineTo(260,0 );
+ctx.moveTo(0,155);
+ctx.lineTo(260,155 );
+ctx.moveTo(260,155);
+ctx.lineTo(260,320 );
+ctx.stroke();
+ }
+    </script>
+    
+  </head>
+
+<body onload="myFunction()">
+  <canvas width='480'  height='320'  id='example'>Обновите браузер</canvas>
+    <canvas width='480'  height='320'  id='example2'>Обновите браузер</canvas>
+     <canvas width='480'  height='320'  id='example3'>Обновите браузер</canvas>
+      <canvas width='480'  height='320'  id='example4'>Обновите браузер</canvas>
+       <canvas width='480'  height='320'  id='example5'>Обновите браузер</canvas>
+        <canvas width='480'  height='320'  id='example6'>Обновите браузер</canvas>
+         <canvas width='480'  height='320'  id='example7'>Обновите браузер</canvas>
+          <canvas width='480'  height='320'  id='example8'>Обновите браузер</canvas>
+
+  
+  </body>
+
+</html>
