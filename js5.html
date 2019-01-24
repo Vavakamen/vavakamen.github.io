@@ -41,20 +41,29 @@ ctx.closePath();
 function er1(){ 
 var canvas = document.getElementById('example'); 
 var ctx = canvas.getContext('2d'); 
+
 ctx.beginPath();
 drawpoint();
-ctx.arc(240, 160, 100, 0, 2 * Math.PI);
+ctx.moveTo(0, 60);
+ctx.lineTo(480, 60);
+ctx.moveTo(140, 0);
+ctx.lineTo(140, 320);
+ctx.moveTo(340, 60);
+ctx.lineTo(80, 320);
+ctx.moveTo(340, 160);
 
-ctx.stroke()
+ctx.arc(240, 160, 100, 0, 2 * Math.PI);
+ctx.stroke();
+
+
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
-if (x <= -2 && y>=1) {
+if (x*x+y*y>1 && y>x ) {
   alert( 'Точка в области' );
 } else {
   alert( 'Точка не в области' ); 
 }
 } 
-
 function drawpoint() { 
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
