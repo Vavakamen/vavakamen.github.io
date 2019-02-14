@@ -39,18 +39,33 @@ ctx.fillRect(0, 0, 480, 320);
 ctx.closePath(); 
 } 
 function er1(){ 
+  clean();
 var canvas = document.getElementById('example'); 
 var ctx = canvas.getContext('2d'); 
 ctx.beginPath();
 drawpoint1();
 drawpoint2();
-ctx.stroke(); 
-} 
+ctx.stroke();
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value);
+var b=Math.sqrt(x);
+var R=Math.sqrt(y/Math.PI);
+var D=Math.sqrt(2*b*b);
+if (R<b/2) {
+  alert( 'круг умещается в квадрате' );
+} else {
+  if (2*R>D) {
+  alert( 'квадрат умещается в круге' );
+} else {
+  alert( 'пересечение' );  
+}
+}
+}
 
 function drawpoint1() { 
 x=Number(document.getElementById("x_znach").value); 
 x=240+x*100; 
-b=Math.sqrt(x);
+var b=Math.sqrt(x);
 var canvas = document.getElementById('example'); 
 var ctx = canvas.getContext('2d'); 
 ctx.beginPath(); 
@@ -62,7 +77,6 @@ ctx.lineTo(240-b/2, 160+b/2);
 ctx.closePath();
 ctx.stroke(); 
 }
-
 function drawpoint2() { 
 y=Number(document.getElementById("y_znach").value);
 y=160+y*100;
@@ -73,7 +87,6 @@ ctx.strokeStyle = 'green';
 ctx.arc(240, 160, Math.sqrt(y/Math.PI), 0 ,2 * Math.PI) 
 ctx.stroke();
 }
-
 </script> 
 </head> 
 <body> 
