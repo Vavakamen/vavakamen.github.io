@@ -50,30 +50,29 @@ x=Number(document.getElementById("x_znach").value);
 y=Number(document.getElementById("y_znach").value);
 var b=Math.sqrt(x);
 var R=Math.sqrt(y/Math.PI);
-var D=Math.sqrt(2*b*b);
-if (R<b/2) {
-  alert( 'круг умещается в квадрате' );
+var h=Math.sqrt(2*b*b);
+if (R<h/3) {
+  alert( 'круг умещается в треугольнике' );
 } else {
-  if (2*R>D) {
-  alert( 'квадрат умещается в круге' );
+  if (2*R>h) {
+  alert( 'треугольник умещается в круге' );
 } else {
   alert( 'пересечение' );  
 }
 }
 }
-
 function drawpoint1() { 
 x=Number(document.getElementById("x_znach").value); 
 x=240+x*100; 
 var b=Math.sqrt(x*4/Math.sqrt(3));
+var h=(b*Math.sqrt(3))/2
 var canvas = document.getElementById('example'); 
 var ctx = canvas.getContext('2d'); 
 ctx.beginPath(); 
 ctx.strokeStyle = 'green'; 
-ctx.moveTo(240-b/2, 160-b/2);
-ctx.lineTo(240+b/2, 160-b/2);
-ctx.lineTo(240+b/2, 160+b/2);
-ctx.lineTo(240-b/2, 160+b/2);
+ctx.moveTo(240, 160-2/3*h);
+ctx.lineTo(240+1/2*b, 160+1/3*h);
+ctx.lineTo(240-1/2*b, 160+1/3*h);
 ctx.closePath();
 ctx.stroke(); 
 }
