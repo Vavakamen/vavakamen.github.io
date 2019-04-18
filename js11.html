@@ -1,0 +1,37 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    
+    function func1() {
+    
+      var a=1
+      var c=0;
+      var i=a;
+      document.getElementById("otvet1").innerHTML = "";
+      do {
+      c= c+1/a;
+      a=a*3;
+          document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i + " "+ c +"<br>";
+              i++;
+      } while (i < 9)}
+
+      </script>
+</head>
+
+<body>
+
+
+  <h1>5.34 </h1>
+
+  <br>
+  <div id="otvet1"></div>
+  <br>
+  <a href="#" onclick="func1()" class="action-button shadow animate blue">1</a>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
