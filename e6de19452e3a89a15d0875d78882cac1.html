@@ -55,6 +55,18 @@
         document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML + a + " " + c +"<br>";
         a++; 
         } while (a <= b)
+          
+          function func5() {
+     var n = Number(document.getElementById("n_f5_znach").value);
+     var c = 0;
+     var i = n;
+    document.getElementById("otvet5").innerHTML = "";
+     do {
+       c = c+i*i
+        document.getElementById("otvet5").innerHTML = document.getElementById("otvet5").innerHTML + i + " " + c +"<br>";
+        i++; 
+        } while (i <=2*n)
+      }
       }
   
   </script>
@@ -114,6 +126,22 @@
   <div id="otvet4"></div>
   <br>
   <a href="#" onclick="func4()" class="action-button shadow animate green">4</a>
+  <br>
+  <br>
+  <br>
+  <br>
+ 
+  
+  <h1>5.31 г</h1> 
+  n=
+  <input type="text" value="1" id="n_f5_znach">
+
+  <div id="otvet5"></div>
+  <br>
+  <a href="#" onclick="func5()" class="action-button shadow animate green">5</a>
+  <br>
+  <br>
+  <br>
   <br>
  
 </body>
