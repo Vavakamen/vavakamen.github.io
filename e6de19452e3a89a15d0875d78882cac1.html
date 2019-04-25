@@ -55,7 +55,7 @@
         document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML + a + " " + c +"<br>";
         a++; 
         } while (a <= b)
-          
+      }  
           function func5() {
      var n = Number(document.getElementById("n_f5_znach").value);
      var c = 0;
@@ -67,6 +67,29 @@
         i++; 
         } while (i <=2*n)
       }
+      
+     function func6() {
+     var n = Number(document.getElementById("n_f6_znach").value);
+     var c = 0;
+     var i = 1;
+    document.getElementById("otvet6").innerHTML = "";
+     do {
+       c = c+(1/i)
+        document.getElementById("otvet6").innerHTML = document.getElementById("otvet6").innerHTML + i + " " + c +"<br>";
+        i++; 
+        } while (i < n+1)
+      }
+
+      function func7() {
+   
+     var c = 0;
+     var i = 2;
+    document.getElementById("otvet7").innerHTML = "";
+     do {
+       c = c+(i/(i+1))
+        document.getElementById("otvet7").innerHTML = c
+        i++; 
+        } while (i < 11)
       }
   
   </script>
@@ -142,6 +165,25 @@
   <br>
   <br>
   <br>
+  <br>
+  
+  
+  <h1>5.32 г</h1> 
+  n=
+  <input type="text" value="1" id="n_f6_znach">
+  <div id="otvet6"></div>
+  <br>
+  <a href="#" onclick="func6()" class="action-button shadow animate red">6</a>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  
+  <h1>5.33 г</h1> 
+  <div id="otvet7"></div>
+  <br>
+  <a href="#" onclick="func7()" class="action-button shadow animate green">7</a>
   <br>
  
 </body>
