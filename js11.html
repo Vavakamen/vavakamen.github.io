@@ -17,6 +17,19 @@
               i++;
       } while (i < 9)}
 
+       function func2() {
+    var n = Number(document.getElementById("n_f2_znach").value);
+      var a=1;
+      var c=0;
+      var i=1;
+      document.getElementById("otvet2").innerHTML = "";
+      do {
+      c= c+1/(i*a);
+      a=a*(-1);
+          document.getElementById("otvet2").innerHTML = c;
+              i++;
+      } while (n >= i)}
+     
       </script>
 </head>
 
@@ -33,5 +46,15 @@
   <br>
   <br>
   <br>
+  
+  <h1>5.35 </h1>
+ n=
+  <input type="text" value="2" id="n_f2_znach">
+  <br>
+  <div id="otvet2"></div>
+  <br>
+  <a href="#" onclick="func2()" class="action-button shadow animate red">2</a>
+  <br>
+  
 </body>
 </html>
